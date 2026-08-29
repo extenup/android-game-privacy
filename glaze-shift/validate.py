@@ -87,11 +87,15 @@ def main() -> int:
         "Other editions remain local candidates or external-platform drafts",
         "progress and preferences stay in browser or app-private storage",
         "does not send gameplay or save data to Extenup",
-        "current signed Android 0.1.0 candidate contains only bundled game files",
+        "current signed Android 0.1.0 release candidate contains only bundled game files",
+        "At this policy update, the Android release candidate has not been submitted to or released through Google Play",
         "requests no Internet access, advertising ID",
         "current local target uses Playgama Bridge",
         "only after both three completed levels and 180 seconds",
         "Startup ad preload, rewarded ads, banners, and advanced banners are disabled",
+        "A prior draft build and media were uploaded and Guided Certification reached 100%",
+        "A corrected local build with the declared level-end interstitial configuration is pending re-upload",
+        "No Playgama build has been submitted, approved, or publicly released",
         "CrazyGames targets do",
         "Data Module for progress",
         "no final GameDistribution build exists",
@@ -112,6 +116,8 @@ def main() -> int:
         "TODO",
         "PLACEHOLDER",
         "we collect no data from any platform",
+        "no build has been uploaded, submitted, or publicly released",
+        "Android candidate has not been uploaded",
     )
     for marker in forbidden_markers:
         if marker.lower() in source.lower():
