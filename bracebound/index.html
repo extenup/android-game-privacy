@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bracebound — Privacy Policy</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <a class="back" href="../">← All privacy policies</a>
+    <article class="policy">
+      <p class="eyebrow">Privacy policy</p>
+      <h1>Bracebound</h1>
+      <p>Last updated: August 30, 2026</p>
+
+      <h2>Scope and distribution types</h2>
+      <p>This policy describes the privacy behavior of Bracebound editions distributed by Extenup. At this update, Bracebound is in release preparation; no edition is described here as submitted, approved or public unless its own platform page confirms that state.</p>
+      <p>There are two distinct distribution types:</p>
+      <ul>
+        <li><strong>SDK-free editions:</strong> the standalone web build, itch.io HTML5 build, generic Telegram-hosted web build and Android wrapper built only from the standalone game.</li>
+        <li><strong>Portal editions:</strong> builds made specifically for Playgama, CrazyGames, GameDistribution, Yandex Games or Poki and integrated with that portal's official SDK.</li>
+      </ul>
+      <p>The store or portal page identifies the edition being used. A portal edition must not be treated as the SDK-free edition.</p>
+
+      <h2>Game progress and preferences</h2>
+      <p>Bracebound can save the current deterministic cave state, current excursion and turn, miner position, dug cells, collected relics, installed braces, rubble and bridge cells, remaining braces, unlocked and completed excursion identifiers, selected language, sound preference, and technical save information such as a schema/content identifier, revision and integrity data.</p>
+      <p>The game does not ask for a name, email address, phone number, contact, precise location, photo, camera or microphone recording, advertising identifier, payment information, chat message, health information or broad file access. It may read the browser, device or platform language as a first-run localization hint. This is not geolocation. Sound is synthesized on the device and does not use the microphone.</p>
+
+      <h2>SDK-free standalone, itch.io, Telegram and Android editions</h2>
+      <p>In an SDK-free edition, progress and preferences stay in browser or app-private storage on the player's device. The game itself has no advertising, analytics, purchases, account system, external login, cloud save, tracking pixel, social feature or developer-operated network service. It does not send gameplay or save data to Extenup.</p>
+      <p>The Android release candidate is intended to contain only bundled game files and to request no Internet access, advertising ID, precise location, contacts, camera, microphone, broad file access or dangerous runtime permission. Before any Android release, the final signed package and its store declarations will be audited together. At this policy update, no Android edition is represented as submitted to or released through Google Play.</p>
+      <p>A hosting or distribution service may still process ordinary connection, account, device, security or store information needed to deliver its website, Telegram interface, download or app store. That service processing occurs under the service's own privacy policy and is separate from the SDK-free game code.</p>
+
+      <h2>Portal editions and official platform SDKs</h2>
+      <p>A portal-specific build can use only the services declared for that exact portal edition. Depending on the portal, its official SDK may provide a language setting, progress storage, loading and gameplay lifecycle events, pause, visibility and audio state, and advertising when enabled for that edition.</p>
+      <ul>
+        <li><strong>Playgama:</strong> the target uses Playgama Bridge for platform language, lifecycle/audio/visibility state, platform storage of the same Bracebound save payload with local fallback, and a spaced level-end interstitial opportunity. Startup ad preload, rewarded ads and banners are not enabled.</li>
+        <li><strong>CrazyGames:</strong> the target uses the official SDK for platform language, loading/gameplay/settings lifecycle, the Data module for progress with local fallback, and a midgame ad opportunity at a completed-level break. The SDK decides fill and cooldown.</li>
+        <li><strong>GameDistribution:</strong> the target uses the official event/ad contract, browser-local progress, one trusted-gesture pre-roll opportunity and spaced natural-break level-end opportunities when enabled.</li>
+        <li><strong>Yandex Games:</strong> the target uses the official SDK for platform language, loading/gameplay/pause lifecycle and a spaced fullscreen opportunity at a completed-level break. Progress remains in browser-local storage; no Player or cloud-save service is claimed.</li>
+        <li><strong>Poki:</strong> the target uses the official SDK for loading/gameplay lifecycle and a commercial-break opportunity at a completed-level break. Progress remains in browser-local storage.</li>
+      </ul>
+      <p>No portal build is described as uploaded, submitted, approved or public unless its platform status confirms that state. No current target contains purchases, an Extenup account system or a separate Extenup analytics SDK.</p>
+
+      <h2>What a portal may process</h2>
+      <p>Where platform storage is used, as in the Playgama and CrazyGames targets, the same Bracebound save payload may be sent to and restored from the portal. The portal may associate its service with a portal account or device under its own rules. When portal advertising is enabled, the portal and its advertising providers may process account, device, connection, consent and advertising information under the portal's privacy policy.</p>
+      <p>A portal may produce aggregate statistics such as starts, play time or ad outcomes for its developer dashboard. Extenup may view aggregate reports and moderation or support information that a portal makes available to publishers. Bracebound does not add a separate Extenup analytics SDK, advertising network, account database or cross-app tracker.</p>
+
+      <h2>Advertising and purchases</h2>
+      <p>SDK-free editions contain no advertising or purchases. Portal editions may request only the official platform advertising opportunities declared above, at startup only where the GameDistribution trusted-gesture contract requires it and otherwise at natural completed-level breaks. Gameplay input and sound are paused during an ad and restored after shown, unfilled or error outcomes. Bracebound has no in-game purchase or external payment system.</p>
+
+      <h2>Retention, deletion and choices</h2>
+      <p>Device-local progress remains until the player clears the site's or app's local data or uninstalls the Android app. Language and sound preferences can be changed in the game.</p>
+      <p>When a portal edition uses platform storage, information stored by that portal is retained and deleted according to its account controls, retention rules and privacy policy. A player can use the portal's privacy or account tools for portal-controlled information. For a question sent to Extenup, identify the game and portal but do not send a password, access token, payment information or private account data.</p>
+
+      <h2>Children's privacy</h2>
+      <p>Bracebound is a general-audience puzzle game and is not specifically directed to children. The game does not ask players to submit personal information. A platform may apply its own age, consent, account or advertising rules to its service.</p>
+
+      <h2>Security and policy changes</h2>
+      <p>Saved progress is validated for compatibility and integrity before it is restored, but no storage system can be guaranteed completely secure. Extenup will update this policy and the relevant store disclosures before adding a developer analytics service, account, purchase, new advertising behavior, additional cloud storage, permission or another material data practice.</p>
+
+      <h2>Contact</h2>
+      <p>Game publisher: Extenup. For privacy or support questions, email <a href="mailto:extenup@gmail.com">extenup@gmail.com</a>.</p>
+    </article>
+  </main>
+</body>
+</html>
