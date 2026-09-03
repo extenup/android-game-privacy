@@ -13,7 +13,7 @@
     <article class="policy">
       <p class="eyebrow">Extenup · KerfMap</p>
       <h1>Privacy policy</h1>
-      <p class="lede">Effective 2 September 2026</p>
+      <p class="lede">Effective 3 September 2026</p>
 
       <p>KerfMap: Cut List Optimizer ("KerfMap") is an offline 1D cut-planning application. This Privacy Policy explains the information the app handles and how it is used.</p>
 
@@ -26,22 +26,22 @@
       <p>KerfMap does not provide cloud backup or synchronization. Android cloud backup and device-to-device transfer are disabled for the app's private data.</p>
 
       <h2>Data collection and sharing</h2>
-      <p>KerfMap does not automatically collect, transmit, sell, or disclose personal information, project content, device identifiers, analytics, diagnostics, advertising data, or usage events to Extenup or third parties. The only outbound transfer is a PDF that you deliberately save or share through Android's system interface; KerfMap never sends that file to Extenup.</p>
+      <p>KerfMap does not automatically collect, transmit, sell, or disclose personal information, project content, device identifiers, analytics, diagnostics, advertising data, or usage events to Extenup or third parties. Project content leaves the app's private storage only when you deliberately save or share a PDF through Android's system interface; KerfMap never sends that file to Extenup.</p>
       <p>The app has no account system, advertising, analytics, tracking SDK, cloud processing, or Internet permission. An optional link to this policy opens in a separate browser; KerfMap does not send project information with that link.</p>
 
       <h2>PDF files you choose to save or share</h2>
-      <p>When you tap <strong>Save PDF</strong>, KerfMap asks the system document picker where to create the file. When you tap <strong>Share PDF</strong>, KerfMap creates a temporary PDF in its private cache and opens the system share sheet. Both actions begin only after you choose them.</p>
+      <p>When you tap <strong>Save PDF</strong>, KerfMap asks the system document picker where to create the file. When you tap <strong>Share PDF</strong>, KerfMap creates a unique temporary PDF copy in its private app cache and opens the Android system share chooser. Both actions begin only after you choose them.</p>
       <p>A PDF can contain the project and material names, plan status, kerf and trim assumptions, stock and part labels and dimensions, cut layout, unplaced parts, optional project notes, and the safety reminder.</p>
-      <p>KerfMap does not scan your storage and does not request broad access to files. A saved PDF remains at the destination you selected until you delete it. For sharing, you select the receiving app, service, and recipient. They handle the shared copy under their own terms and privacy practices.</p>
-      <p>KerfMap removes older temporary share files when it prepares a new share copy. The current temporary copy can remain in private cache until a later share, until you clear the app's cache or storage, or until Android removes cached files.</p>
+      <p>KerfMap does not scan your storage and does not request broad access to files. A saved PDF remains at the destination you selected until you delete it. A temporary share copy is made available to other apps only through the user-triggered Android share chooser, using a content URI with a read-access grant. You select the receiving app or service and, where applicable, the recipient. They handle any copy they receive under their own terms and privacy practices.</p>
+      <p>At the start of a later share, KerfMap makes a best-effort attempt to remove temporary share copies older than 24 hours. A copy can remain longer when no later share occurs or cleanup cannot be completed. Android may remove cached copies sooner; clearing KerfMap's cache or storage or uninstalling the app can also remove them sooner.</p>
 
       <h2>Data retention and deletion</h2>
       <p>Local projects remain on your device until you delete them in KerfMap, clear the app's storage, or uninstall the app. Clearing storage or uninstalling removes the app's private project data. Android backup and device transfer are disabled for this data.</p>
-      <p>PDF files saved outside KerfMap's private storage, and copies retained by a receiving app or service, are not deleted when you delete a project or uninstall KerfMap. Delete those copies from the location, app, or service where you chose to save or send them.</p>
+      <p>Deleting a project does not recall a PDF that was already saved or shared. PDF files saved outside KerfMap's private storage, and copies retained by a receiving app or service, are not deleted when you delete a project or uninstall KerfMap. Delete those copies from the location, app, or service where you chose to save or send them. Temporary copies still in KerfMap's cache follow the retention behavior described above.</p>
       <p>Extenup cannot view or delete local KerfMap projects or user-created PDF files because Extenup does not receive them.</p>
 
       <h2>Permissions and system access</h2>
-      <p>KerfMap does not request Internet, broad storage, photos, camera, microphone, location, contacts, calendar, notifications, advertising ID, or other sensitive personal-data permissions. User-requested PDF operations use the system document picker, a restricted app FileProvider, and the system share sheet.</p>
+      <p>KerfMap does not request Internet, broad storage, photos, camera, microphone, location, contacts, calendar, notifications, advertising ID, or other sensitive personal-data permissions. User-requested PDF operations use the system document picker, a non-exported app FileProvider restricted to the temporary PDF cache path, per-URI read grants, and the system share chooser.</p>
 
       <h2>Children's privacy</h2>
       <p>KerfMap is a workshop-planning utility intended for adults. It is not directed to children under 13, and Extenup does not knowingly collect personal information from children or any other users through KerfMap.</p>
