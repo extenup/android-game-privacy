@@ -31,15 +31,15 @@
 
       <h2>Saving a PDF</h2>
       <p>When you choose <strong>Save PDF</strong>, the app first renders an integrity-checked pending copy in its private, non-backed-up local storage. It then opens Android's system document picker so that you choose the destination. This private staging copy lets the app save the exact report you requested if Android recreates the screen while the picker is open; it is not exposed through the app's FileProvider and is never uploaded.</p>
-      <p>After a confirmed successful save or after you cancel the picker, the app attempts to delete the private pending copy. If registry or file cleanup fails, that copy may remain until a later cleanup opportunity. At app startup, the app makes a best-effort attempt to remove incomplete or pending-save files older than 24 hours. This is a cleanup threshold, not a guaranteed maximum retention period: a copy can remain longer until another cleanup opportunity or after cleanup failure. Clearing app storage or uninstalling removes it. The PDF saved at your chosen destination remains there until you delete or move it. Extenup does not receive the PDF.</p>
+      <p>After a confirmed successful save or after you cancel the picker, the app attempts to delete the private pending copy. If registry or file cleanup fails, that copy may remain until a later cleanup opportunity. At app startup, the app makes a best-effort attempt to remove incomplete or pending-save files older than 24 hours. This is a cleanup threshold, not a guaranteed maximum retention period: a copy can remain longer until another cleanup opportunity or after cleanup failure. Clearing app storage or uninstalling removes it. The PDF saved at your chosen destination remains there until you delete or move it. The app does not send the PDF to Extenup.</p>
 
       <h2>Sharing a PDF</h2>
-      <p>When you choose <strong>Share PDF</strong>, the app creates a unique temporary PDF below its restricted app-private <code>cache/shared-layout-plans</code> directory and opens Android's system share sheet. The share copy is exposed through a non-exported FileProvider, and the receiving app selected by you receives read access to its content URI. Extenup does not receive the PDF.</p>
+      <p>When you choose <strong>Share PDF</strong>, the app creates a unique temporary PDF below its restricted app-private <code>cache/shared-layout-plans</code> directory and opens Android's system share sheet. The share copy is exposed through a non-exported FileProvider, and the receiving app selected by you receives read access to its content URI. The app does not send the PDF to Extenup. Extenup receives it only if you independently choose Extenup as a recipient or attach it to a support message using another app.</p>
       <p>At app startup and before creating a later share copy, the app makes a best-effort attempt to delete temporary share directories older than 24 hours. This is a cleanup threshold, not a guaranteed maximum retention period. A temporary copy can remain longer until another cleanup opportunity or if deletion fails. Android may remove cache files sooner, and clearing app storage or uninstalling the app removes its private cache. A receiving app or service may retain its own copy under its own terms and privacy policy.</p>
 
       <h2>Retention and deletion</h2>
       <p>Local projects remain until you confirm their deletion in the app, clear the app's storage, or uninstall the app. Pending-save and temporary-share PDFs follow the cleanup behavior described above. Files saved outside the app remain until you delete them from their selected destination. Clearing app storage or uninstalling removes private app data but does not remove PDFs saved elsewhere or copies already provided to another app.</p>
-      <p>Because Extenup does not receive or retain project or personal data, Extenup has no server-side user data to retrieve or delete.</p>
+      <p>The app does not send project or personal data to Extenup, so there is no app account or server-side app-data record to retrieve or delete. If you voluntarily contact Extenup, the contact service delivers the message, address, and anything you choose to include; that support correspondence is handled only to answer and maintain the support record and can be deleted on request by emailing the address below.</p>
 
       <h2>External actions</h2>
       <p>The in-app privacy-policy link opens a separate browser and does not attach project information. Android, a document provider, a receiving app, or another service you choose may process a saved or shared PDF under its own terms.</p>
@@ -54,7 +54,7 @@
       <p>If this Privacy Policy changes, the updated version will be published at the same public location with a revised effective date.</p>
 
       <h2>Contact</h2>
-      <p>Board &amp; Batten Calculator is published by Extenup. Privacy questions can be sent to <a href="mailto:extenup@gmail.com">extenup@gmail.com</a>.</p>
+      <p>Board &amp; Batten Calculator is published by Extenup. Privacy questions and requests to delete voluntary support correspondence can be sent to <a href="mailto:extenup@gmail.com">extenup@gmail.com</a>. Email is handled by the user's and Extenup's email providers under their respective terms.</p>
     </article>
   </main>
 </body>
